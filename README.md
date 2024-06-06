@@ -47,6 +47,8 @@ Client                  WebCrawlerService                  WebCrawler
   |<-------------------------------                            |
   |                             |                              |
 
+![image](https://github.com/goyalrohit/web-crawler-service/assets/4389889/88f5fa06-6b37-4e34-aecd-98024ae42858)
+
 
 # Technologies Used
 
