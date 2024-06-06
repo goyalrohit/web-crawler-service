@@ -15,37 +15,8 @@ Extensible Architecture: The service is designed with an extensible architecture
 
 # Sequence Diagram : 
 
-Client                  WebCrawlerService                  WebCrawler
-  |                             |                              |
-  | Open an HTTP Connection     |                              |
-  |------------------------------>                             |
-  |                             |                              |
-  | Request Crawl               |                              |
-  |------------------------------>                             |
-  |                             | Create WebCrawler Instance   |
-  |                             |------------------------------>
-  |                             |                              |
-  |                             | Start Crawling               |
-  |                             |<------------------------------>
-  |                             |                              |
-  |                             | Fetch Data                   |
-  |                             |<------------------------------>
-  |                             |                              |
-  | Active MQ Data Transfer     |                              |
-  |<-------------------------------                             |
-  |                             |                              |
-  |                             | Fetch Data                   |
-  |                             |<------------------------------>
-  |                             |                              |
-  | Active MQ Data Transfer     |                              |
-  |<-------------------------------                             |
-  |                             |                              |
-  |                             | Stop Crawling                |
-  |                             |<------------------------------>
-  |                             |                              |
-  | Close HTTP  Connection      |                              |
-  |<-------------------------------                            |
-  |                             |                              |
+Client      --->            WebCrawlerService        ---->          Requested Website
+ 
 
 ![image](https://github.com/goyalrohit/web-crawler-service/assets/4389889/88f5fa06-6b37-4e34-aecd-98024ae42858)
 
