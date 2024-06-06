@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: web-crawler-service
+
+server:
+  port : 8081
+
+
+activemq:
+  concurrent:
+    connections: 1-1
+  destination:
+    subscriber:
+      crawler: crawlertopic
